@@ -1,0 +1,139 @@
+/* ===== Variables de diseño (colores y tipografía de la imagen) ===== */
+:root {
+  --portfolio-purple: #6600b3;      /* barra de navegación */
+  --portfolio-purple-title: #5b1aa6; /* títulos de sección */
+  --portfolio-gray-text: #8a8a8a;    /* texto de introducción */
+  --bs-font-sans-serif: 'Trebuchet MS', 'Lucida Grande', Tahoma, sans-serif;
+}
+
+body {
+  font-family: var(--bs-font-sans-serif);
+  color: #111;
+  background-color: #fff;
+}
+
+/* ===== Navbar ===== */
+.navbar-portfolio {
+  background-color: var(--portfolio-purple);
+}
+.navbar-portfolio .brand-name {
+  font-size: 1.4rem;
+  line-height: 1.1;
+}
+.navbar-portfolio .contact-line {
+  font-size: 0.72rem;
+  font-style: italic;
+  color: #fff;
+}
+.navbar-portfolio .nav-link {
+  color: #fff;
+  font-size: 0.85rem;
+}
+.navbar-portfolio .nav-link:hover,
+.navbar-portfolio .nav-link:focus {
+  color: #e6ccff;
+}
+
+/* ===== Títulos de sección ===== */
+.section-title {
+  color: var(--portfolio-purple-title);
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+/* ===== Introducción ===== */
+.intro-title {
+  color: var(--portfolio-purple-title);
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+.intro-text {
+  color: var(--portfolio-gray-text);
+  font-size: 1.15rem;
+  line-height: 1.25;
+}
+
+/* ===== Habilidades ===== */
+.skill-card {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.45);
+  text-align: center;
+}
+.skill-card .skill-icon {
+  font-size: 1.7rem;
+}
+.skill-card .skill-name {
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+.skill-card .skill-exp {
+  font-size: 0.85rem;
+}
+
+/* ===== Proyectos ===== */
+.project-item h5 {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.project-item ul {
+  font-size: 0.85rem;
+}
+.project-item hr {
+  width: 85%;
+  margin-left: 3.5rem;
+}
+
+/* ===== Recomendaciones ===== */
+.recommendation-card {
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  font-style: italic;
+  font-size: 0.78rem;
+}
+
+/* ===== Formulario ===== */
+.leave-recommendation h4 {
+  font-weight: 400;
+}
+.btn-submit {
+  color: var(--portfolio-purple);
+  border: 1px solid var(--portfolio-purple);
+  background: #fff;
+  min-width: 110px;
+}
+.btn-submit:hover,
+.btn-submit:focus {
+  background: var(--portfolio-purple);
+  color: #fff;
+}
+
+/* ===== Botón "scroll to top" ===== */
+.scroll-top-btn {
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--portfolio-purple);
+  border: none;
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1;
+  z-index: 1030;
+}
+.scroll-top-btn:hover,
+.scroll-top-btn:focus {
+  background-color: #4d0088;
+  color: #fff;
+}
+
+/* Desplazamiento suave y compensación del navbar al navegar por anclas */
+html {
+  scroll-behavior: smooth;
+}
+section[id] {
+  scroll-margin-top: 80px;
+}
